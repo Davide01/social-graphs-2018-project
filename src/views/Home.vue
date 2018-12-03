@@ -1,15 +1,17 @@
 <template>
   <div class="home">
+    {{home}}
   </div>
 </template>
 
 <script>
-import Navbar from "@/components/Navbar.vue";
-
 export default {
   name: "home",
-  components: {
-    Navbar
+  components: {},
+  data() {
+    return {
+      home: "In this project we are analyzing the Westworld TV series"
+    };
   }
 };
 </script>

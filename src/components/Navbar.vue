@@ -6,6 +6,9 @@
             </router-link>
             <ul class="navbar-nav">
                 <li class="nav-item">
+                    <router-link class="nav-link" to="/home">Home</router-link>
+                </li>
+                <li class="nav-item">
                     <router-link class="nav-link" to="/network"> Network Analysis
                         <span class="sr-only">(current)</span>
                     </router-link>
@@ -41,6 +44,7 @@ ul li {
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
+  min-width: 90px;
 }
 .navbar-dark {
   background: #000;
