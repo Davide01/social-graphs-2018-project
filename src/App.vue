@@ -1,16 +1,28 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <navbar></navbar>
+    <router-view />
   </div>
 </template>
 
+<script>
+import Navbar from "@/components/Navbar";
+export default {
+  name: "App",
+  components: {
+    Navbar
+  }
+};
+</script>
+
 <style lang="scss">
+@font-face {
+  font-family: "Exo";
+  src: url("/assets/fonts/exo/Exo2-Light.otf") format("otf");
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Exo, Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
