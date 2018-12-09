@@ -14,6 +14,9 @@
                     </router-link>
                 </li>
                 <li class="nav-item">
+                    <router-link class="nav-link" to="/characters">Characters</router-link>
+                </li>
+                <li class="nav-item">
                     <router-link class="nav-link" to="/sentiment">Text and Sentiment Analysis</router-link>
                 </li>
             </ul>
