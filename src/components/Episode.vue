@@ -6,8 +6,10 @@
     </b-col>
     <b-col cols="3" class="text">
       <p> {{description}}</p>
-      <p> Sentiment: <strong class="upper"> {{sent}} </strong> </p>
-      <p> Happiness: <strong class="upper"> {{happiness}} </strong> </p>
+      <p> Sentiment IMDB: <strong class="upper"> {{sentIMDB}} </strong> </p>
+      <p> Happiness IMDB: <strong class="upper"> {{happinessIMDB}} </strong> </p>
+      <p> Sentiment Script: <strong class="upper"> {{sentScript}} </strong> </p>
+      <p> Happiness Script: <strong class="upper"> {{happinessScript}} </strong> </p>
     </b-col>
   </b-row>
   <b-row class="char-display">
@@ -31,8 +33,10 @@ export default {
       name:String,
       ext:String,
       description:String,
-      sentiment:Number,
-      happiness: String,
+      sentimentIMDB:Number,
+      happinessIMDB: Number,
+      sentimentScript: Number,
+      happinessScript: Number,
       plotName: String,
       imdbWords: String
   },
@@ -43,7 +47,8 @@ export default {
         extension: this.ext,
         wordcloud: this.plotName.toLowerCase() + ".png",
         imdbWordCloud: this.imdbWords + ".png",
-        sent: Math.round(this.sentiment * 1000) / 1000
+        sentIMDB: Math.round(this.sentimentIMDB * 1000) / 1000,
+        sentScript: Math.round(this.sentimentScript * 1000) / 1000
     };
   },
   methods: {

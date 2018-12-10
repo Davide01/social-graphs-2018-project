@@ -49,8 +49,8 @@
         </p>
       </b-col>
     </b-row>
-    <episode v-for="c in episodesS1" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentiment="c.sentiment" :happiness="c.happiness" :name="c.name" :imdbWords="c.imdbWords"></episode>
-    <episode v-for="c in episodesS2" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentiment="c.sentiment" :happiness="c.happiness" :name="c.name" :imdbWords="c.imdbWords"></episode>
+    <episode v-for="c in episodesS1" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentimentIMDB="c.sentimentIMDB" :happinessIMDB="c.happinessIMDB" :sentimentScript="c.sentimentScript" :happinessScript="c.happinessScript" :name="c.name" :imdbWords="c.imdbWords"></episode>
+    <episode v-for="c in episodesS2" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentimentIMDB="c.sentimentIMDB" :happinessIMDB="c.happinessIMDB" :sentimentScript="c.sentimentScript" :happinessScript="c.happinessScript" :name="c.name" :imdbWords="c.imdbWords"></episode>
     {{episodesS1[0].imdbWords}}
  </div>
 </template>
@@ -65,86 +65,114 @@ export default {
   data() {
     return {
       seasons: "Sentiment of the seasons",
+      meanIMDB: 3.685972950739764,
+      meanScript: 4.645575635385507,
+      stdIMDB: 0.1392388059793303,
+      stdScript: 0.07012442580302519,
+      meanIMDB2: 3.769041760818424,
+      meanScript2: 4.546052456063184,
+      stdIMDB2: 0.29841325382276385,
+      stdScript2: 0.17611019864868882,
       episodesS1: [{
           name: "s01episode1.txt.",
           ext: "png",
           plotName: "scripts01episode1",
           imdbWords: "topWordsSeason10",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.6477828746177354,
+          sentimentScript: 4.682286154749672,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s01episode2.",
           ext: "png",
           plotName: "scripts01episode2",
           imdbWords: "topWordsSeason11",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.8011111111111107,
+          sentimentScript: 4.777963915470494,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s01episode3.",
           ext: "png",
           plotName: "scripts01episode3",
           imdbWords: "topWordsSeason12",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.562535885167462,
+          sentimentScript: 4.613581411488362,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s01episode4.",
           ext: "png",
           plotName: "scripts01episode4",
           imdbWords: "topWordsSeason13",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.657703703703705,
+          sentimentScript: 4.714004069355978,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s01episode5.",
           ext: "png",
           plotName: "scripts01episode5",
           imdbWords: "topWordsSeason14",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.866315789473688,
+          sentimentScript: 4.6890648287385135,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s01episode6.",
           ext: "png",
           plotName: "scripts01episode6",
           imdbWords: "topWordsSeason15",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.8614081632653074,
+          sentimentScript: 4.5387670087419245,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s01episode7.",
           ext: "png",
           plotName: "scripts01episode7",
           imdbWords: "topWordsSeason16",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.602554744525547,
+          sentimentScript: 4.5647189586114845,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s01episode8.",
           ext: "png",
           plotName: "scripts01episode8",
           imdbWords: "topWordsSeason17",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.3995180722891565,
+          sentimentScript: 4.587294684149006,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s01episode9.",
           ext: "png",
           plotName: "scripts01episode9",
           imdbWords: "topWordsSeason18",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.671834170854272,
+          sentimentScript: 4.618005409940401,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s01episode10.",
           ext: "png",
           plotName: "scripts01episode10",
           imdbWords: "topWordsSeason19",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.788964992389651,
+          sentimentScript: 4.670069912609237,
+          happinessIMDB: "",
+          happinessScripts: "",
         }],
         episodesS2: [{
           name: "s02episode1.",
@@ -152,84 +180,143 @@ export default {
           plotName: "scripts02episode1",
           imdbWords: "topWordsSeason20",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.7534903047091404,
+          sentimentScript: 4.552762993356778,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s02episode2.",
           ext: "png",
           plotName: "scripts02episode2",
           imdbWords: "topWordsSeason21",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 4.027914691943129,
+          sentimentScript: 4.766096347031963,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s02episode3.",
           ext: "png",
           plotName: "scripts02episode3",
           imdbWords: "topWordsSeason22",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.51,
+          sentimentScript: 4.479963359407161,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s02episode4.",
           ext: "png",
           plotName: "scripts02episode4",
           imdbWords: "topWordsSeason23",
           description: "",
-          sentiment: "",
-          happiness: ""
-        },{
+          sentimentIMDB: 4.032284172661871,
+          sentimentScript: 4.52628074750109,
+          happinessIMDB: "",
+          happinessScripts: "",
           name: "s02episode5.",
           ext: "png",
           plotName: "scripts02episode5",
           imdbWords: "topWordsSeason24",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.1559411764705856,
+          sentimentScript: 4.446426315789472,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s02episode6.",
           ext: "png",
           plotName: "scripts02episode6",
           imdbWords: "topWordsSeason25",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.6446069868995665,
+          sentimentScript: 4.642306233766235,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s02episode7.",
           ext: "png",
           plotName: "scripts02episode7",
           imdbWords: "topWordsSeason26",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 3.657650897226752,
+          sentimentScript: 4.584374662493864,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s02episode8.",
           ext: "png",
           plotName: "scripts02episode8",
           imdbWords: "topWordsSeason27",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 4.196841155234653,
+          sentimentScript: 4.107991150442483,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s02episode9.",
           ext: "png",
           plotName: "scripts02episode9",
           imdbWords: "topWordsSeason28",
           description: "",
-          sentiment: "",
-          happiness: ""
+          sentimentIMDB: 4.061978260869566,
+          sentimentScript: 4.7478346810422325,
+          happinessIMDB: "",
+          happinessScripts: "",
         },{
           name: "s02episode10.",
           ext: "png",
           plotName: "scripts02episode10",
           imdbWords: "topWordsSeason29",
           description: "",
-          sentiment: "",
-          happiness: ""
-        }]
-    };
+          sentimentIMDB: 3.6497099621689792,
+          sentimentScript: 4.606488069800564,
+          happinessIMDB: "",
+          happinessScripts: ""
+    }]
   }
-};
+},
+  mounted() {
+    for(let i = 0; i < 10; i++){
+
+      // Check season 1 IMDB sentiments
+      if (this.episodesS1[i].sentimentIMDB < (this.meanIMDB - this.stdIMDB)) {
+        this.episodesS1[i].happinessIMDB = "sad";
+      } else if (this.episodesS1[i].sentimentIMDB > (this.meanIMDB + this.stdIMDB)) {
+        this.episodesS1[i].happinessIMDB = "happy";
+      } else {
+        this.episodesS1[i].happinessIMDB = "neutral";
+      }
+
+      // Check season 1 Scripts sentiments
+      if (this.episodesS1[i].sentimentScript < (this.meanScript - this.stdScript)) {
+        this.episodesS1[i].happinessScript = "sad";
+      } else if (this.episodesS1[i].sentimentScript > (this.meanScript + this.stdScript)) {
+        this.episodesS1[i].happinessScript = "happy";
+      } else {
+        this.episodesS1[i].happinessScript = "neutral";
+      }
+
+      // Check season 2 IMDB sentiments
+      if (this.episodesS2[i].sentimentIMDB < (this.meanIMDB2 - this.stdIMDB2)) {
+        this.episodesS2[i].happinessIMDB = "sad";
+      } else if (this.episodesS2[i].sentimentIMDB > (this.meanIMDB2 + this.stdIMDB2)) {
+        this.episodesS2[i].happinessIMDB = "happy";
+      } else {
+        this.episodesS2[i].happinessIMDB = "neutral";
+      }
+
+      // Check season 2 Scripts sentiments
+      if (this.episodesS2[i].sentimentScript < (this.meanScript2 - this.stdScript2)) {
+        this.episodesS2[i].happinessScript = "sad";
+      } else if (this.episodesS2[i].sentimentScript > (this.meanScript2 + this.stdScript2)) {
+        this.episodesS2[i].happinessScript = "happy";
+      } else {
+        this.episodesS2[i].happinessScript = "neutral";
+      }
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 .seasonSentimentPlot {
