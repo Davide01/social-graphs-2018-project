@@ -17,7 +17,7 @@
                     <router-link class="nav-link" to="/characters">Characters</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link" to="/sentiment">Text and Sentiment Analysis</router-link>
+                    <router-link class="nav-link" to="/seasons">Seasons</router-link>
                 </li>
             </ul>
         </nav>
