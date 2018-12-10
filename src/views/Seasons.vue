@@ -49,16 +49,184 @@
         </p>
       </b-col>
     </b-row>
-  </div>
+    <episode v-for="c in episodesS1" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentiment="c.sentiment" :happiness="c.happiness" :name="c.name" :imdbWords="c.imdbWords"></episode>
+    <episode v-for="c in episodesS2" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentiment="c.sentiment" :happiness="c.happiness" :name="c.name" :imdbWords="c.imdbWords"></episode>
+    {{episodesS1[0].imdbWords}}
+ </div>
 </template>
 
 <script>
+import Episode from "@/components/Episode.vue"
 export default {
   name: "seasons",
-  components: {},
+  components: {
+    Episode
+  },
   data() {
     return {
-      seasons: "Sentiment of the seasons"
+      seasons: "Sentiment of the seasons",
+      episodesS1: [{
+          name: "s01episode1.txt.",
+          ext: "png",
+          plotName: "scripts01episode1",
+          imdbWords: "topWordsSeason10",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s01episode2.",
+          ext: "png",
+          plotName: "scripts01episode2",
+          imdbWords: "topWordsSeason11",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s01episode3.",
+          ext: "png",
+          plotName: "scripts01episode3",
+          imdbWords: "topWordsSeason12",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s01episode4.",
+          ext: "png",
+          plotName: "scripts01episode4",
+          imdbWords: "topWordsSeason13",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s01episode5.",
+          ext: "png",
+          plotName: "scripts01episode5",
+          imdbWords: "topWordsSeason14",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s01episode6.",
+          ext: "png",
+          plotName: "scripts01episode6",
+          imdbWords: "topWordsSeason15",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s01episode7.",
+          ext: "png",
+          plotName: "scripts01episode7",
+          imdbWords: "topWordsSeason16",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s01episode8.",
+          ext: "png",
+          plotName: "scripts01episode8",
+          imdbWords: "topWordsSeason17",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s01episode9.",
+          ext: "png",
+          plotName: "scripts01episode9",
+          imdbWords: "topWordsSeason18",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s01episode10.",
+          ext: "png",
+          plotName: "scripts01episode10",
+          imdbWords: "topWordsSeason19",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        }],
+        episodesS2: [{
+          name: "s02episode1.",
+          ext: "png",
+          plotName: "scripts02episode1",
+          imdbWords: "topWordsSeason20",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s02episode2.",
+          ext: "png",
+          plotName: "scripts02episode2",
+          imdbWords: "topWordsSeason21",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s02episode3.",
+          ext: "png",
+          plotName: "scripts02episode3",
+          imdbWords: "topWordsSeason22",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s02episode4.",
+          ext: "png",
+          plotName: "scripts02episode4",
+          imdbWords: "topWordsSeason23",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s02episode5.",
+          ext: "png",
+          plotName: "scripts02episode5",
+          imdbWords: "topWordsSeason24",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s02episode6.",
+          ext: "png",
+          plotName: "scripts02episode6",
+          imdbWords: "topWordsSeason25",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s02episode7.",
+          ext: "png",
+          plotName: "scripts02episode7",
+          imdbWords: "topWordsSeason26",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s02episode8.",
+          ext: "png",
+          plotName: "scripts02episode8",
+          imdbWords: "topWordsSeason27",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s02episode9.",
+          ext: "png",
+          plotName: "scripts02episode9",
+          imdbWords: "topWordsSeason28",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        },{
+          name: "s02episode10.",
+          ext: "png",
+          plotName: "scripts02episode10",
+          imdbWords: "topWordsSeason29",
+          description: "",
+          sentiment: "",
+          happiness: ""
+        }]
     };
   }
 };
