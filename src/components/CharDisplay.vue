@@ -6,6 +6,9 @@
     </b-col>
     <b-col cols="3" class="text">
       <p> {{description}}</p>
+      <p> Role: <strong class="upper"> {{role}} </strong> </p>
+      <p> Sentiment: <strong class="upper"> {{sent}} </strong> </p>
+      <p> Happiness: <strong class="upper"> {{happiness}} </strong> </p>
     </b-col>
     <b-col cols="5">
       <img class="image" :src="getWordCloud()" >
@@ -21,14 +24,17 @@ export default {
       character:String,
       ext:String,
       description:String,
-      sentiment:String
+      sentiment:Number,
+      role:String,
+      happiness: String
   },
   data() {
     return {
         charImagePath:"../assets/characters/",
         charImage: this.character + this.ext,
         extension: this.ext,
-        wordcloud: "topWords" + this.character.toLowerCase() + ".png"
+        wordcloud: "topWords" + this.character.toLowerCase() + ".png",
+        sent: Math.round(this.sentiment * 1000) / 1000
     };
   },
   methods: {
@@ -67,7 +73,11 @@ export default {
 
   .text {
     margin: auto;
-    text-align: center;
+    text-align: justify;
+  }
+
+  .upper {
+    text-transform: uppercase
   }
 </style>
 
