@@ -105,6 +105,15 @@
     </b-row>
     <episode v-for="c in episodesS1" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentimentIMDB="c.sentimentIMDB" :happinessIMDB="c.happinessIMDB" :sentimentScript="c.sentimentScript" :happinessScript="c.happinessScript" :name="c.name" :imdbWords="c.imdbWords" :title="c.title"></episode>
     <b-row>
+      <b-col >
+        <p class="text">
+          As we can see, in the characteristics from scripts there are more emotional words, slang words, more swear words and words like "yes", "sure" and "sorry".
+          On the other hand in the wordclouds from the IMDB description there are more descriptive and emotionless words also with more names.
+          This makes sense, as in the scripts the characters are showing emotions while the descriptions are describing what happens in each of the episodes.
+        </p>
+      </b-col>
+    </b-row>
+    <b-row>
       <b-col>
         <h3> Season 2 episodes</h3>
       </b-col>

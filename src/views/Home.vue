@@ -6,9 +6,9 @@
         <b-col>
           <h2> Westworld</h2>
           <h3> *** Spoilers ahead ***</h3>
-          <p> Westworld is a TV series that we both auther like very much. For those who don't know Westworld is an American science fiction Western television series. It airs HBO and it is based on the 1973 film of the same name. The story takes place in Westworld, a fictional, technologically advanced Wild-West-themed amusement park populated by android "hosts". The park caters to high-paying "guests" who may indulge their wildest fantasies within the park without fear of retaliation from the hosts, who are prevented by their programming from harming humans. </p>
+          <p> Westworld is a TV series which both of us like very much. For those who don't know Westworld is an American science fiction Western television series. It airs HBO and it is based on the 1973 film of the same name. The story takes place in Westworld, a fictional, technologically advanced Wild-West-themed amusement park populated by android "hosts". The park caters to high-paying "guests" who may indulge their wildest fantasies within the park without fear of retaliation from the hosts, who are prevented by their programming from harming humans. </p>
 
-          <p>The first season was broadcast between October 2 and December 4, 2016; it comprised ten episodes. In November 2016, HBO renewed the series for a ten-episode second season, which was broadcast from April 22 to June 24, 2018.</p>
+          <p>The first season was broadcasted between October 2 and December 4, 2016; it comprised ten episodes. In November 2016, HBO renewed the series for a ten-episode second season, which was broadcast from April 22 to June 24, 2018.</p>
         </b-col>
       </b-row>
       <b-row>
@@ -68,6 +68,7 @@ export default {
   components: {},
   data() {
     return {
+      baseUrl: process.env.BASE_URL,
       home: ""
     };
   }
