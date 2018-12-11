@@ -54,10 +54,31 @@
         <h3>Season 1 episodes</h3>
       </b-col>
     </b-row>
+    <b-row>
+      <b-col >
+        <p class="text">
+          Now let's see the statistics for each episode. As we can see there are 2 happy episodes in first season regarding the IMDB description
+          and one regarding the scripts. On the other side there are two sad episodes regarding the scripts and one regarding IMDB description.
+          Most of the episodes are neutral based on the sentiment analysis. 
+          For each episodes there is a plot displayed which represents the mentioning of each character in each episode. Furtheremore, we draw the words
+          which characterizes the best each episode based on the most used words. Also some sentiment characteristics are displayed for each episode.
+        </p>
+      </b-col>
+    </b-row>
     <episode v-for="c in episodesS1" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentimentIMDB="c.sentimentIMDB" :happinessIMDB="c.happinessIMDB" :sentimentScript="c.sentimentScript" :happinessScript="c.happinessScript" :name="c.name" :imdbWords="c.imdbWords" :title="c.title"></episode>
     <b-row>
       <b-col>
         <h3> Season 2 episodes</h3>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col >
+        <p class="text">
+          In the second season there are 2 happy episodes based on the scripts
+          and one based on the IMDB description. Also, there is one sad episode both regarding the IMDB description and the scripts.
+          The second season seems a little bit happier, as there are two sad and three happy episodes based on the sum of the statistics. We conclude,
+          that the Westworld TV series is a more serious show, with a neutral sentiment in most of the time.  
+        </p>
       </b-col>
     </b-row>
     <episode v-for="c in episodesS2" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentimentIMDB="c.sentimentIMDB" :happinessIMDB="c.happinessIMDB" :sentimentScript="c.sentimentScript" :happinessScript="c.happinessScript" :name="c.name" :imdbWords="c.imdbWords" :title="c.title"></episode>
