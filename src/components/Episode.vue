@@ -15,11 +15,11 @@
   </b-row>
   <b-row class="char-display">
       <b-col cols="6">
-          <h3> Wordcloud from scripts </h3>
+          <h3> Characteristics from scripts </h3>
       <img class="image" :src="getWordCloud()" >
     </b-col>
     <b-col cols="6">
-        <h3> Wordcloud from IMDB description </h3>
+        <h3> Characteristics from IMDB description </h3>
       <img class="image" :src="getImdbWordCloud()" >
     </b-col>
   </b-row>
