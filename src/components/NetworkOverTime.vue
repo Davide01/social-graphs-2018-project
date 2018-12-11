@@ -2,11 +2,8 @@
   <b-row class="network-over-time">
       <h3>{{text}}</h3>
     <b-row>
-      <b-col cols="6">
+      <b-col cols="12">
         <img class="imageNet" :src="getNetworkImage()">
-      </b-col>
-      <b-col cols="6">
-        <img class="imagePlot" :src="getDegreeImage()" >
       </b-col>
     </b-row>
   </b-row>
@@ -31,13 +28,11 @@ export default {
   },
   methods: {
       getNetworkImage(){
-        console.log("fileNetwork: " + this.fileNetwork)
         var images = require.context("../assets/network/", false, /\.png$/);
         return images("./" + this.fileNetwork);
       },
 
       getDegreeImage(){
-        console.log("fileDegree: " + this.fileDegree)
         var images = require.context("../assets/network/", false, /\.png$/);
         return images("./" + this.fileDegree);
       }
@@ -53,9 +48,8 @@ export default {
 
   .imageNet {
     margin: auto;
-    margin-left: -5%;
     display: block;
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
     width: auto\9; 
   }

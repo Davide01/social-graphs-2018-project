@@ -29,7 +29,7 @@
           <b-row>
             <b-col>
               <h2> Network evolution over time</h2>
-              <p> With the following set of graphs and plots we can see how the network of characters evolve throughout the show over time. From the network figures it is easy to see how the show sometimes focuses on the host on certain episodes and sometimes on the humans. From the plots we can see who are the characters that the show focuses most for any given episode.</p>
+              <p> With the following set of graphs we can see how the network of characters evolve throughout the show over time. From the network figures it is easy to see how the show sometimes focuses on the host on certain episodes and sometimes on the humans.</p>
             </b-col>
           </b-row>
           <network-over-time v-for="e in episodes" :key="e.text" :fileDegree="e.fileDegree" :fileNetwork="e.fileNetwork" :text="e.text"></network-over-time>
