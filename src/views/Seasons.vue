@@ -49,6 +49,44 @@
         </p>
       </b-col>
     </b-row>
+    <b-row class="space">
+      <b-col cols="1">
+      </b-col>
+      <b-col class="dark">
+        <h5> Season 1 </h5>
+        <p>
+           Average sentiment IMDB: <strong> {{Math.round(meanIMDB * 1000) / 1000}} </strong>
+        </p>
+        <p>
+           Average sentiment scripts: <strong> {{Math.round(meanScript * 1000) / 1000}} </strong>
+        </p>
+        <p>
+           Standard deviation IMDB: <strong> {{Math.round(stdIMDB * 1000) / 1000}} </strong>
+        </p>
+        <p>
+           Standard deviation scripts: <strong> {{Math.round(stdScript * 1000) / 1000}} </strong>
+        </p>
+      </b-col>
+      <b-col cols="2">
+      </b-col>
+      <b-col class="dark">
+        <h5> Season 2 </h5>
+        <p>
+           Average sentiment IMDB: <strong> {{Math.round(meanIMDB2 * 1000) / 1000}} </strong>
+        </p>
+        <p>
+           Average sentiment scripts: <strong> {{Math.round(meanScript2 * 1000) / 1000}} </strong>
+        </p>
+        <p>
+           Standard deviation IMDB: <strong> {{Math.round(stdIMDB2 * 1000) / 1000}} </strong>
+        </p>
+        <p>
+           Standard deviation scripts: <strong> {{Math.round(stdScript2 * 1000) / 1000}} </strong>
+        </p>
+      </b-col>
+      <b-col cols="1">
+      </b-col>
+    </b-row>
     <b-row>
       <b-col>
         <h3>Season 1 episodes</h3>
@@ -406,12 +444,25 @@ h3 {
   text-transform: uppercase;
 }
 
+h5 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
 .text {
   text-align: justify;
 }
 
 .space {
   margin-top: 30px;
+}
+
+.dark {
+  background: #000;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  text-align: center;
 }
 </style>
 

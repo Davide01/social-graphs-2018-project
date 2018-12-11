@@ -16,7 +16,7 @@
       <b-col>
         <p> As we can see the happiest character is Grace and the saddest is Angela. 
           Grace is a human and Angela a host. As we can see most of the characters 
-          below the average happiness are host. These could be because they are programmed 
+          below the average happiness are hosts. These could be because they are programmed 
           and often they got a sad scenario. Most of the humans are on the other side of 
           the plot, they are happier then the hosts. Of course there are exceptions, 
           for example Logan. </p>
