@@ -20,7 +20,7 @@
                     <router-link class="nav-link" to="/seasons">Seasons</router-link>
                 </li>
                 <li class="nav-item">
-                     <a href="https://www.google.com/">Explainer Notebook</a> 
+                     <a href="http://nbviewer.jupyter.org/github/Davide01/social-graphs-2018-project/blob/master/Explainer%20Notebook.ipynb">Explainer Notebook</a> 
                 </li>
             </ul>
         </nav>
