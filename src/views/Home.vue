@@ -48,6 +48,16 @@
           <img class="horseman" src="../assets/home/host.jpg">
         </b-col>
       </b-row>
+      <b-row>
+        <b-col>
+          <p>If you want to find out a bit more about the project check the <a href="http://nbviewer.jupyter.org/github/Davide01/social-graphs-2018-project/blob/master/Explainer%20Notebook.ipynb">Explainer notebook</a> or the video we made down below.</p>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/z4xjNuRBHuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </b-col>
+      </b-row>
     </div>
   </div>
 </template>
@@ -99,5 +109,10 @@ export default {
     margin-bottom: 20px;
     font-size: 20px;
     font-style: italic;
+  }
+
+  .video{
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 </style>
