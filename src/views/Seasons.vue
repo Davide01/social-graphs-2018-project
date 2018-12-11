@@ -49,9 +49,18 @@
         </p>
       </b-col>
     </b-row>
-    <episode v-for="c in episodesS1" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentimentIMDB="c.sentimentIMDB" :happinessIMDB="c.happinessIMDB" :sentimentScript="c.sentimentScript" :happinessScript="c.happinessScript" :name="c.name" :imdbWords="c.imdbWords"></episode>
-    <episode v-for="c in episodesS2" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentimentIMDB="c.sentimentIMDB" :happinessIMDB="c.happinessIMDB" :sentimentScript="c.sentimentScript" :happinessScript="c.happinessScript" :name="c.name" :imdbWords="c.imdbWords"></episode>
-    {{episodesS1[0].imdbWords}}
+    <b-row>
+      <b-col>
+        <h3>Season 1 episodes</h3>
+      </b-col>
+    </b-row>
+    <episode v-for="c in episodesS1" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentimentIMDB="c.sentimentIMDB" :happinessIMDB="c.happinessIMDB" :sentimentScript="c.sentimentScript" :happinessScript="c.happinessScript" :name="c.name" :imdbWords="c.imdbWords" :title="c.title"></episode>
+    <b-row>
+      <b-col>
+        <h3> Season 2 episodes</h3>
+      </b-col>
+    </b-row>
+    <episode v-for="c in episodesS2" :key="c.name" :plotName="c.plotName" :ext="c.ext" :description="c.description" :sentimentIMDB="c.sentimentIMDB" :happinessIMDB="c.happinessIMDB" :sentimentScript="c.sentimentScript" :happinessScript="c.happinessScript" :name="c.name" :imdbWords="c.imdbWords" :title="c.title"></episode>
  </div>
 </template>
 
@@ -76,6 +85,8 @@ export default {
       episodesS1: [{
           name: "s01episode1.txt.",
           ext: "png",
+          title: "The Original",
+          plot: "",
           plotName: "scripts01episode1",
           imdbWords: "topWordsSeason10",
           description: "",
@@ -86,6 +97,8 @@ export default {
         },{
           name: "s01episode2.",
           ext: "png",
+          title: "Chestnut",
+          plot: "",
           plotName: "scripts01episode2",
           imdbWords: "topWordsSeason11",
           description: "",
@@ -96,6 +109,8 @@ export default {
         },{
           name: "s01episode3.",
           ext: "png",
+          title: "The Stray",
+          plot: "",
           plotName: "scripts01episode3",
           imdbWords: "topWordsSeason12",
           description: "",
@@ -106,6 +121,8 @@ export default {
         },{
           name: "s01episode4.",
           ext: "png",
+          title: "Dissonance Theory",
+          plot: "",
           plotName: "scripts01episode4",
           imdbWords: "topWordsSeason13",
           description: "",
@@ -116,6 +133,8 @@ export default {
         },{
           name: "s01episode5.",
           ext: "png",
+          title: "Contrapasso",
+          plot: "",
           plotName: "scripts01episode5",
           imdbWords: "topWordsSeason14",
           description: "",
@@ -126,6 +145,8 @@ export default {
         },{
           name: "s01episode6.",
           ext: "png",
+          title: "The Adversary",
+          plot: "",
           plotName: "scripts01episode6",
           imdbWords: "topWordsSeason15",
           description: "",
@@ -136,6 +157,8 @@ export default {
         },{
           name: "s01episode7.",
           ext: "png",
+          title: "Trompe L'Oeil",
+          plot: "",
           plotName: "scripts01episode7",
           imdbWords: "topWordsSeason16",
           description: "",
@@ -146,6 +169,8 @@ export default {
         },{
           name: "s01episode8.",
           ext: "png",
+          title: "Trace Decay",
+          plot: "",
           plotName: "scripts01episode8",
           imdbWords: "topWordsSeason17",
           description: "",
@@ -156,6 +181,8 @@ export default {
         },{
           name: "s01episode9.",
           ext: "png",
+          title: "The Well-Tempered Clavier",
+          plot: "",
           plotName: "scripts01episode9",
           imdbWords: "topWordsSeason18",
           description: "",
@@ -166,6 +193,8 @@ export default {
         },{
           name: "s01episode10.",
           ext: "png",
+          title: "The Bicameral Mind",
+          plot: "",
           plotName: "scripts01episode10",
           imdbWords: "topWordsSeason19",
           description: "",
@@ -177,6 +206,8 @@ export default {
         episodesS2: [{
           name: "s02episode1.",
           ext: "png",
+          title: "Journey into Night",
+          plot: "",
           plotName: "scripts02episode1",
           imdbWords: "topWordsSeason20",
           description: "",
@@ -187,6 +218,8 @@ export default {
         },{
           name: "s02episode2.",
           ext: "png",
+          title: "Reunion",
+          plot: "",
           plotName: "scripts02episode2",
           imdbWords: "topWordsSeason21",
           description: "",
@@ -197,6 +230,8 @@ export default {
         },{
           name: "s02episode3.",
           ext: "png",
+          title: "Virtù e Fortuna",
+          plot: "",
           plotName: "scripts02episode3",
           imdbWords: "topWordsSeason22",
           description: "",
@@ -207,6 +242,8 @@ export default {
         },{
           name: "s02episode4.",
           ext: "png",
+          title: "The Riddle of the Sphinx",
+          plot: "",
           plotName: "scripts02episode4",
           imdbWords: "topWordsSeason23",
           description: "",
@@ -214,8 +251,11 @@ export default {
           sentimentScript: 4.52628074750109,
           happinessIMDB: "",
           happinessScripts: "",
+        },{
           name: "s02episode5.",
           ext: "png",
+          title: "Akane no Mai",
+          plot: "",
           plotName: "scripts02episode5",
           imdbWords: "topWordsSeason24",
           description: "",
@@ -226,6 +266,8 @@ export default {
         },{
           name: "s02episode6.",
           ext: "png",
+          title: "Phase Space",
+          plot: "",
           plotName: "scripts02episode6",
           imdbWords: "topWordsSeason25",
           description: "",
@@ -236,6 +278,8 @@ export default {
         },{
           name: "s02episode7.",
           ext: "png",
+          title: "Les Écorchés",
+          plot: "",
           plotName: "scripts02episode7",
           imdbWords: "topWordsSeason26",
           description: "",
@@ -246,6 +290,8 @@ export default {
         },{
           name: "s02episode8.",
           ext: "png",
+          title: "Kiksuya",
+          plot: "",
           plotName: "scripts02episode8",
           imdbWords: "topWordsSeason27",
           description: "",
@@ -256,6 +302,8 @@ export default {
         },{
           name: "s02episode9.",
           ext: "png",
+          title: "Vanishing Point",
+          plot: "",
           plotName: "scripts02episode9",
           imdbWords: "topWordsSeason28",
           description: "",
@@ -266,6 +314,8 @@ export default {
         },{
           name: "s02episode10.",
           ext: "png",
+          title: "The Passenger",
+          plot: "",
           plotName: "scripts02episode10",
           imdbWords: "topWordsSeason29",
           description: "",
@@ -327,6 +377,12 @@ h2 {
     margin-top: 50px;
     font-size: 25px;
     text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .text {

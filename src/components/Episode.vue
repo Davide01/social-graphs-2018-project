@@ -5,6 +5,7 @@
       <img :src="getCharImage()" class="plot">
     </b-col>
     <b-col cols="3" class="text">
+        <p> <strong>{{title}} </strong> </p>
       <p> {{description}}</p>
       <p> Sentiment IMDB: <strong class="upper"> {{sentIMDB}} </strong> </p>
       <p> Happiness IMDB: <strong class="upper"> {{happinessIMDB}} </strong> </p>
@@ -38,7 +39,8 @@ export default {
       sentimentScript: Number,
       happinessScript: Number,
       plotName: String,
-      imdbWords: String
+      imdbWords: String,
+      title: String
   },
   data() {
     return {
