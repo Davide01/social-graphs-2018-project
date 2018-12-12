@@ -60,6 +60,14 @@
           <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/z4xjNuRBHuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </b-col>
       </b-row>
+
+      <b-row>
+        <b-col>
+          <p> Based on the analysis performed in this project and from the experience watching the series we can recommend this TV show 
+            to everyone interested in IT or just likes science fiction films with high quality plots and twists. 
+            There are many emotions present in the series, which don't have to be either happy or sad. A nice evolution of the characters is catched by the TV show, which envolves getting consciouss generation the ability of survival.</p>
+        </b-col>
+      </b-row>
     </div>
   </div>
 </template>
