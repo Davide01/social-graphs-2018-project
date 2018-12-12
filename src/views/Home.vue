@@ -6,9 +6,9 @@
         <b-col>
           <h2> Westworld</h2>
           <h3> *** Spoilers ahead ***</h3>
-          <p> Westworld is a TV series which both of us like very much. For those who don't know Westworld is an American science fiction Western television series. It airs HBO and it is based on the 1973 film of the same name. The story takes place in Westworld, a fictional, technologically advanced Wild-West-themed amusement park populated by android "hosts". The park caters to high-paying "guests" who may indulge their wildest fantasies within the park without fear of retaliation from the hosts, who are prevented by their programming from harming humans. </p>
+          <p> Westworld is a TV series which both of us like very much. For those who don't know Westworld is an American science fiction Western television series. It is broadcasted by HBO and the idea is based on the 1973 film of the same name. The story takes place in Westworld, a fictional, technologically advanced Wild-West-themed amusement park populated by android "hosts". The park caters to high-paying "guests" who may indulge their wildest fantasies within the park without fear of retaliation from the hosts, who are prevented by their programming from harming humans. </p>
 
-          <p>The first season was broadcasted between October 2 and December 4, 2016; it comprised ten episodes. In November 2016, HBO renewed the series for a ten-episode second season, which was broadcast from April 22 to June 24, 2018.</p>
+          <p>The first season was broadcasted between October 2 and December 4, 2016; it comprised from ten episodes. In November 2016, HBO renewed the series for a ten-episode second season, which was broadcasted from April 22 to June 24, 2018.</p>
         </b-col>
       </b-row>
       <b-row>
@@ -40,7 +40,9 @@
       <b-row>
         <b-col>
           <h2> Our motivation</h2>
-          <p>Since the shows plot can be a bit confusing with all of the plot twists and turns and trying to understand who of the characters are hosts and who are humans, we decided to make an analysis on the shows plot and characters. We will do that by creating all kinds of different plots, graphs and wordclouds to help us get a better understanding of it all.</p>
+          <p>Since the shows plot can be a bit confusing with all of the twists and turns and it's hard to understand who of the
+             characters are hosts and who are humans, we decided to make an analysis on the show's plot and characters sentiment and characteristics. 
+             It's done by creating all kinds of different plots, graphs, wordclouds and sentiment analysis tools to help us get a better understanding of it all.</p>
         </b-col>
       </b-row>
       <b-row>
