@@ -1,6 +1,8 @@
 <template>
   <b-row class="network-over-time">
       <h3>{{text}}</h3>
+      <br/>
+      <p>{{synopsis}}</p>
     <b-row>
       <b-col cols="12">
         <img class="imageNet" :src="getNetworkImage()">
@@ -16,14 +18,16 @@ export default {
   props: {
       text:String,
       fileDegree:String,
-      fileNetwork:String
+      fileNetwork:String,
+      synopsis:String
   },
   data() {
     return {
         networkImagePath:"../assets/network/",
         text: this.text,
         fileDegree: this.fileDegree,
-        fileNetwork: this.fileNetwork
+        fileNetwork: this.fileNetwork,
+        synopsis: this.synopsis
     };
   },
   methods: {
