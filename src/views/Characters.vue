@@ -34,6 +34,11 @@
         <p> In this page all the important characters are displayed. The wordclouds represent their characteristics based on the most appearing words in their description on the wiki pages.</p>
       </b-col>
     </b-row>
+    <b-row>
+      <b-col>
+        <p> The wordclouds can be considered as a description of the characters. They can tell a lot about a character. If he/she is violent, or in which context he appears the most, what characters is he mostly connected to, which clan is he from or has to most connections to and many more.</p>
+      </b-col>
+    </b-row>
     <char-display v-for="c in names" :key="c.name" :character="c.name" :ext="c.ext" :description="c.text" :sentiment="c.sentiment" :role="c.role" :happiness="c.happiness"></char-display>
     </div>
   </div>
