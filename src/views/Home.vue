@@ -19,7 +19,7 @@
       <b-row>
         <b-col>
           <h2> Datasets</h2>
-          <p> We have several datasets for this porject. The first are the scripts for each episode of the show (there are 2 seasons with 10 episodes each) which we got from <a href="https://www.springfieldspringfield.co.uk/episode_scripts.php?tv-show=westworld-2016"> https://www.springfieldspringfield.co.uk</a>. Another dataset we got from the character wikis from the offical westword famdom wiki page <a href="https://westworld.fandom.com/wiki/"> westworld.fandom.com</a>. Finally we looked into the imdb page for the show and its connected pages. You can download the datasets we used from <a href="https://github.com/Davide01/social-graphs-2018-project/raw/master/datasets.rar">here</a>. </p>
+          <p> We have several datasets for this porject. The first are the scripts for each episode of the show (there are 2 seasons with 10 episodes each) which we got from <a href="https://www.springfieldspringfield.co.uk/episode_scripts.php?tv-show=westworld-2016"> https://www.springfieldspringfield.co.uk</a>. Another dataset we got from the character wikis from the offical westword famdom wiki page <a href="https://westworld.fandom.com/wiki/"> westworld.fandom.com</a>. Finally we looked into the imdb page for the show and its connected pages. You can download the datasets we used from <a href="https://github.com/Davide01/social-graphs-2018-project/raw/master/datasets.zip">here</a>. </p>
         </b-col>
       </b-row>
       <b-row>
